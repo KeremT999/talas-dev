@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kerem</title>
+<meta name="description" content="Kerem, IT-Systemelektroniker Azubi aus Wittmund.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__brand">
+      <img src="logo.png" alt="Kerem Logo" class="nav__logo">
+    </a>
+    <div class="nav__links">
+    </div>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <h1 class="hero__title reveal">Kerem</h1>
+</header>
+
+<main>
+
+</main>
+
+<footer class="footer">
+  <span>talas.dev</span>
+  <span>2026 Kerem</span>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('nav--scrolled', window.scrollY > 40);
+  });
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealEls = document.querySelectorAll('.reveal');
+
+  if (reduceMotion) {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+  } else {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
+  }
+</script>
+
+</body>
+</html>
