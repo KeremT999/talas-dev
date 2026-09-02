@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kerem — IT-Systemelektroniker</title>
+<meta name="description" content="Kerem — IT-Systemelektroniker Azubi aus Wittmund. Hardware, Embedded Systems, Softwareentwicklung.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sheet">
+
+  <header class="header">
+    <div class="header__id">
+      <span class="chip">KT-001</span>
+      <span class="header__rev">REV 2026-09</span>
+    </div>
+    <h1 class="header__name">Kerem</h1>
+    <p class="header__role">IT-Systemelektroniker · Azubi</p>
+    <p class="header__loc">Wittmund, Ostfriesland</p>
+    <nav class="header__nav">
+      <a href="#ueber">Über mich</a>
+      <a href="#skills">Skills</a>
+      <a href="#projekte">Projekte</a>
+      <a href="#werdegang">Werdegang</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="ueber" class="section">
+      <div class="section__label"><span class="section__num">01</span> Übersicht</div>
+      <p class="section__lead">
+        Ich arbeite an der Schnittstelle zwischen Hardware und Software:
+        Platinenentwurf, eingebettete Systeme und die Programme, die sie
+        steuern. Meine Ausbildung deckt beides ab — vom Lötkolben bis zum
+        Code, der auf dem fertigen Board läuft.
+      </p>
+      <p class="section__body">
+        Neben der Ausbildung entstehen eigene Projekte: von Discord-Bots
+        über Raspberry-Pi-Server bis zu selbst entworfenen Leiterplatten.
+        Dokumentiert wird alles wie ein echtes Projekt — mit Planung,
+        Testphase und schriftlicher Auswertung, wie in der IHK-Praxis üblich.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section__label"><span class="section__num">02</span> Kompetenzen</div>
+      <div class="skills">
+        <div class="skills__group">
+          <h3 class="skills__title">Hardware</h3>
+          <ul class="skills__list">
+            <li>PCB-Design (TARGET 3001!)</li>
+            <li>Embedded Systems (Raspberry Pi)</li>
+            <li>I2C, GPIO, Sensorik</li>
+            <li>Löt- und Reparaturarbeiten</li>
+            <li>Netzwerktechnik &amp; Mesh-WLAN</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__title">Software</h3>
+          <ul class="skills__list">
+            <li>Python</li>
+            <li>Discord-Bot-Entwicklung</li>
+            <li>Webentwicklung (HTML/CSS/JS)</li>
+            <li>Datenanbindung &amp; APIs</li>
+            <li>Dokumentation &amp; IHK-Berichte</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekte" class="section">
+      <div class="section__label"><span class="section__num">03</span> Projekte</div>
+
+      <article class="project">
+        <div class="project__head">
+          <h3 class="project__name">BarBot</h3>
+          <span class="project__tag">Raspberry Pi · IHK-Projektkandidat</span>
+        </div>
+        <p class="project__desc">
+          Automatische Cocktail-Maschine auf Raspberry-Pi-Basis — Steuerung
+          von Pumpen und Dosierung über GPIO, potenzielles Abschlussprojekt.
+        </p>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3 class="project__name">PS5-Controller-Reparatur</h3>
+          <span class="project__tag">Hardware · Reparatur</span>
+        </div>
+        <p class="project__desc">
+          Instandsetzung eines DualSense-Controllers mit defektem R3-Stick,
+          inklusive Ersatzplatine und Stick-Tausch.
+        </p>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3 class="project__name">10-Zoll-Homelab-Rack</h3>
+          <span class="project__tag">Embedded · Server</span>
+        </div>
+        <p class="project__desc">
+          Eigenes Homelab-Rack mit Raspberry-Pi-4-Compute-Node als
+          Basis für eigene Dienste.
+        </p>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3 class="project__name">Pi-Server mit Pi-hole</h3>
+          <span class="project__tag">Raspberry Pi · DNS</span>
+        </div>
+        <p class="project__desc">
+          Heimserver für Discord-Bots und netzwerkweite Werbe- und
+          Tracker-Filterung per Pi-hole.
+        </p>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3 class="project__name">Deal-Aggregator-Bot</h3>
+          <span class="project__tag">Discord · Python</span>
+        </div>
+        <p class="project__desc">
+          Discord-Bot, der RSS-Feeds deutscher Deal-Seiten sammelt und
+          Angebote automatisch postet.
+        </p>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3 class="project__name">Livery Werkstatt</h3>
+          <span class="project__tag">Web-App · fabric.js / three.js</span>
+        </div>
+        <p class="project__desc">
+          Livery-Editor für GTA V im Browser, inklusive Modell-Extraktion
+          und FastAPI-Backend.
+        </p>
+      </article>
+
+    </section>
+
+    <section id="werdegang" class="section">
+      <div class="section__label"><span class="section__num">04</span> Werdegang</div>
+      <div class="cv">
+        <div class="cv__row">
+          <span class="cv__period">laufend</span>
+          <span class="cv__text">Ausbildung zum IT-Systemelektroniker</span>
+        </div>
+      </div>
+      <p class="section__note">
+        Weitere Stationen (Schule, Praktika) hier ergänzen.
+      </p>
+    </section>
+
+    <section id="kontakt" class="section section--last">
+      <div class="section__label"><span class="section__num">05</span> Kontakt</div>
+      <p class="section__body">
+        <a class="contact-link" href="mailto:kerem@talas.dev">kerem@talas.dev</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>talas.dev</span>
+    <span>© 2026 Kerem</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
